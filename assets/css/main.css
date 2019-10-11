@@ -1,0 +1,368 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+.grid-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+#menu-main-menu {
+  display: flex;
+}
+
+.single .sidebar {
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.font-rale {
+  font-family: "Raleway", sans-serif;
+}
+
+#menu-main-menu li {
+  color: white;
+  padding: 1em;
+  margin-left: 1em;
+  font-weight: bold;
+}
+/* calendar widget */
+
+#wp-calendar {
+  width: 100%;
+}
+#wp-calendar caption {
+  text-align: right;
+  color: #333;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+#wp-calendar thead {
+  font-size: 10px;
+}
+#wp-calendar thead th {
+  padding-bottom: 10px;
+}
+
+#wp-calendar tbody td {
+  text-align: center;
+  padding: 10px;
+}
+#wp-calendar tbody td:hover {
+  background: #fff;
+}
+#wp-calendar tbody .pad {
+  background: none;
+}
+#wp-calendar tfoot #next {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+}
+#wp-calendar tfoot #prev {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+#wp-calendar tbody td > a {
+  color: teal;
+}
+
+.slider {
+  width: 100%;
+  margin: 20px auto 50px;
+}
+
+.slick-slide {
+  margin: 0px 10px;
+  height: 350px;
+}
+
+.slick-slide img {
+  width: 100%;
+  margin: auto;
+  height: 350px;
+  object-fit: cover;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(5px);
+}
+
+.slick-current {
+  opacity: 1;
+  -webkit-filter: blur(0px); /* Safari 6.0 - 9.0 */
+  filter: blur(0px);
+}
+
+.slick-list {
+  padding: 0 20% 0 0;
+}
+
+.news-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.news-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.3));
+}
+
+blockquote {
+  padding: 2em;
+  border-left: 4px solid gray;
+  margin: 1em;
+  background: #cccccc26;
+}
+
+p {
+  display: block;
+}
+
+.main-content {
+  line-height: 30px;
+}
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5 {
+  font-weight: bold;
+  margin: 10px;
+  color: #232223;
+}
+
+.card p {
+  word-break: break-all !important;
+}
+
+.single h1 {
+  font-size: 2em;
+}
+
+/* style comments area  */
+.my-comments > li {
+  margin: 10px;
+  border-left: 4px solid teal;
+  padding-left: 20px;
+}
+.my-comments li .children {
+  padding-left: 30px;
+  margin: 25px;
+}
+.my-comments li .children > li {
+  margin-top: 20px;
+}
+.my-comments .comment .comment-author {
+  display: flex;
+  align-items: center;
+}
+.my-comments .comment .comment-author img {
+  border-radius: 50%;
+}
+.my-comments .comment .comment-author cite {
+  margin: 0px 20px;
+  font-style: normal;
+  font-weight: bold;
+}
+.my-comments .comment .comment-author span {
+  display: none;
+}
+
+.my-comments .comment .comment-meta .comment-edit-link {
+  color: teal;
+}
+.my-comments .comment .comment-meta {
+  color: #666;
+}
+
+.my-comments .comment .comment-body p {
+  padding-left: 30px;
+}
+
+.my-comments .comment .comment-body .reply {
+  color: teal;
+}
+
+/* edit reply secion  */
+
+.comment-respond {
+  padding: 10px;
+}
+.comment-respond a {
+  color: teal;
+}
+.comment-respond .comment-reply-title {
+  color: #888;
+}
+.comment-respond .comment-reply-title small {
+  color: teal;
+}
+
+.comment-respond .comment-form-comment {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.comment-respond .comment-form-comment textarea {
+  border: 1px solid rgb(136, 136, 136);
+  max-width: 400px;
+  max-height: 150px;
+  height: 241px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  min-height: 100px;
+  line-height: 25px;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 75vw;
+}
+
+.comment-respond .form-submit .submit {
+  margin-top: 10px;
+  padding: 9px 16px;
+  background: teal;
+  border-color: teal !important;
+  color: white;
+  cursor: pointer;
+}
+.comment-respond .comment-form-comment textarea:hover,
+.comment-respond .comment-form-comment textarea:focus {
+  border-color: teal;
+}
+.comment-respond .comment-form p {
+  margin: 20px;
+}
+.comment-respond .comment-form p > input {
+  border: 1px solid #777;
+  border-radius: 5px;
+  padding: 3px 5px;
+  outline: none;
+}
+
+.comment-respond .comment-form p > input:hover,
+.comment-respond .comment-form p > input:focus {
+  border-color: teal;
+}
+
+/* responsive menu */
+
+.menu li {
+  padding: 2em !important;
+}
+
+ul li:hover ul {
+  display: block;
+}
+
+ul ul {
+  background: white;
+  box-shadow: 1px 1px 7px #555;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 9999;
+  display: none;
+  top: 100px;
+  min-width: 200px;
+}
+
+.sub-menu li {
+  color: #222;
+  padding: 1em 2em !important;
+  margin: 0px !important;
+  font-weight: 100;
+}
+
+ul ul li:hover {
+  background: teal;
+}
+ul ul li:hover > a {
+  color: white !important;
+}
+
+ul ul li a {
+  color: #222;
+}
+
+#mep_0 {
+  background: teal;
+  border-radius: 30px;
+}
+.mejs-controls {
+  background: teal !important;
+  border-radius: 30px !important;
+}
+
+@media (max-width: 500px) {
+  .grid-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+  .single .container {
+    flex-wrap: wrap;
+  }
+  .single .sidebar {
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav {
+    padding: 1em;
+  }
+  #menu-main-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  ul ul {
+    position: relative;
+    top: 0;
+    padding: 0;
+    background: teal;
+    margin: 20px;
+  }
+
+  ul ul li a {
+    color: white;
+  }
+}
