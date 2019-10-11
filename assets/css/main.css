@@ -288,11 +288,11 @@ p {
   padding: 2em !important;
 }
 
-ul li:hover ul {
+#menu-main-menu li:hover ul {
   display: block;
 }
 
-ul ul {
+#menu-main-menu ul {
   background: white;
   box-shadow: 1px 1px 7px #555;
   margin: 0;
@@ -311,14 +311,14 @@ ul ul {
   font-weight: 100;
 }
 
-ul ul li:hover {
+#menu-main-menu ul li:hover {
   background: teal;
 }
-ul ul li:hover > a {
+#menu-main-menu ul li:hover > a {
   color: white !important;
 }
 
-ul ul li a {
+#menu-main-menu ul li a {
   color: #222;
 }
 
@@ -354,7 +354,7 @@ ul ul li a {
     align-items: center;
     flex-direction: column;
   }
-  ul ul {
+  #menu-main-menu ul {
     position: relative;
     top: 0;
     padding: 0;
